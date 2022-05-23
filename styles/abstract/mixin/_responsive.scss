@@ -1,0 +1,87 @@
+// @each $responsive_name,
+// $responsive_val in $responsive {
+
+//     @each $responsive_device,
+//     $responsive_device_val in $responsive_val {
+//         @mixin #{$responsive_name}-#{$responsive_device} {
+//             @media screen and(max-width:#{$responsive_device_val}) {
+//                 @content;
+//             }
+//         }
+//     }
+// }
+
+
+
+@mixin breakpoint-down($breakpoints_prefix) {
+    $breakpoints_name: map-get($breakpoints, $breakpoints_prefix);
+    @media screen and(max-width: $breakpoints_name) {
+        @content;
+    }
+}
+
+@mixin breakpoint-up($breakpoints_prefix) {
+    $breakpoints_name: map-get($breakpoints, $breakpoints_prefix);
+    @media screen and(min-width: $breakpoints_name) {
+        @content;
+    }
+}
+
+
+.test {
+
+    @include breakpoint-down("xl") {
+        color: red;
+    }
+
+    @include breakpoint-up("xl"){
+        font-size:0;
+    }
+
+    @include breakpoint-down("md") {
+        color: red;
+    }
+
+    @include breakpoint-up("md"){
+        font-size:0;
+    }
+
+    @include breakpoint-down("2sm") {
+        color: red;
+    }
+
+    @include breakpoint-up("2sm"){
+        font-size:0;
+    }
+
+    @include breakpoint-down("sm") {
+        color: red;
+    }
+
+    @include breakpoint-up("sm"){
+        font-size:0;
+    }
+
+    @include breakpoint-down("3xs") {
+        color: red;
+    }
+
+    @include breakpoint-up("3xs"){
+        font-size:0;
+    }
+
+    @include breakpoint-down("2xs") {
+        color: red;
+    }
+
+    @include breakpoint-up("2xs"){
+        font-size:0;
+    }
+
+    @include breakpoint-down("xs") {
+        color: red;
+    }
+    @include breakpoint-up("xs"){
+        font-size:0;
+    }
+}

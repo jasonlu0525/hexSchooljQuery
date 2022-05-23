@@ -1,0 +1,156 @@
+$primary:#000;
+$secondary:#00cc99;
+$dark:#111619;
+$gray-dark-1:#ccc;
+// $gray-dark-2:#00000020;
+// $gray-dark-3:#555555;
+// $gray-dark-4:#0A0A0A;
+
+$gray-light-1:#f6f6f6;
+$gray-light-2:#f7f7f7;
+$white:#fff;
+
+// $tertiary:#AA06010D;
+// $brown-dark-1:#5F3E2D;
+// $brown-light-1:#B75929;
+
+$blue-light:#00aaec;
+$blue-dark:#4460a0;
+$red-light:#e12d80;
+
+$colors:(primary:$primary,
+    secondary:$secondary,
+    // tertiary:$tertiary,
+    gray-light-1:$gray-light-1,
+    gray-light-2:$gray-light-2,
+    // gray-light-3:$gray-light-3,
+    // gray-light-4:$gray-light-4,
+    gray-dark-1:$gray-dark-1,
+    // gray-dark-2:$gray-dark-2,
+    // gray-dark-3:$gray-dark-3,
+    // gray-dark-4:$gray-dark-4,
+    // brown-light-1:$brown-light-1,
+    // brown-dark-1:$brown-dark-1,
+    white:$white,
+    dark:$dark,
+    blue-light:$blue-light,
+    blue-dark:$blue-dark,
+    red-light:$red-light);
+
+$colors_prefix:(bg:background-color,
+    text:color,
+    border:border-color,
+    link:color);
+
+$spacing:(0:0px,
+    1:4px,
+    2:8px,
+    3:12px,
+    4:16px,
+    5:20px,
+    6:24px,
+    7:28px,
+    8:32px,
+    9:36px,
+    10:40px,
+    11:44px,
+    12:48px,
+    13:52px,
+    14:56px,
+    15:60px,
+    16:64px,
+    17:68px);
+
+$box-model:(m:margin,
+    p:padding);
+
+$direction:(t:top,
+    e:right,
+    s:left,
+    b:bottom);
+
+$fs-0: 72px;
+$fs-1: 64px;
+$fs-2: 48px;
+$fs-3: 36px;
+$fs-4: 32px;
+$fs-5: 28px;
+$fs-6: 24px;
+$fs-7: 20px;
+$fs-8: 19px;
+$fs-9:18px;
+$fs-10:16px;
+$fs-11:14px;
+$fs-12:12px;
+$fs-13:11px;
+
+
+$font-size:(0: $fs-0,
+    1:$fs-1,
+    2:$fs-2,
+    3:$fs-3,
+    4:$fs-4,
+    5:$fs-5,
+    6:$fs-6,
+    7:$fs-7,
+    8:$fs-8,
+    9:$fs-9,
+    10:$fs-10,
+    11:$fs-11);
+
+
+$text-direction: left,
+right,
+center;
+
+$font-weight:(100:100,
+    200:200,
+    300:300,
+    normal:400,
+    500:500,
+    600:600,
+    bold:700,
+    800:800,
+    bolder:900,
+);
+
+$display:none block inline inline-block flex inline-flex;
+$flex_justify_content:(start:flex-start,
+    end:flex-end,
+    center:center,
+    around:space-around,
+    between:space-between,
+    evenly:space-evenly,
+
+);
+
+$flex_align_items:(stretch:stretch,
+    center:center,
+    start:flex-start,
+    end:flex-end);
+
+$flex_direction: row row-reverse column column-reverse;
+
+$flex_space: 0 1;
+
+$flex-wrap: nowrap wrap;
+
+$scale:(31:31%, 50:50%,
+    100:100%);
+
+$position:(dir: top left bottom end,
+    offsets:(0:0%,
+        25:25%,
+        50:50%,
+        75:75%,
+        100:100%),
+    values: relative absolute fixed sticky initial);
+
+$breakpoints:("xl":992px,
+    "md":768px, "2sm":767px,
+    "sm":576px,
+    "3xs":375px,
+    "2xs":414px,
+    "xs":320px,
+
+);

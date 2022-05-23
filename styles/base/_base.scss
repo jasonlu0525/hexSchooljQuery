@@ -1,0 +1,75 @@
+:root{
+    font-size: 16px !important;
+}
+
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	font: inherit;
+    &:hover{
+        color: inherit;
+    }
+}
+
+span{
+	vertical-align:middle;
+}
+
+textarea{
+	resize: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, "Roboto", "Noto Sans", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+
+// h1 {
+// 	font-size: $fs-5; //
+// }
+
+h2 {
+
+	font-size: $fs-3; //
+}
+
+h3 {
+	font-size: $fs-6; //
+}
+
+h4 {
+	font-size: $fs-11; //
+}
+
+.h1{
+	line-height: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+}
+
+.container{
+	max-width: 1000px;
+	padding: 0 15px;
+	margin: 0 auto;
+}

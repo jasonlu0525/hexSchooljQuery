@@ -1,0 +1,11 @@
+.table {
+    width: 100%;
+    margin: 0 auto;
+    & *{
+        padding: 8px;
+        text-align: start;
+    }
+    &-sm{
+        max-width: 838px;
+    }
+}

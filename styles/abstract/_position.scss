@@ -1,0 +1,15 @@
+@each $values in map-get($position, values) {
+    .position-#{$values} {
+        position: $values;
+    }
+}
+
+@each $directions in map-get($position, dir) {
+
+    @each $offsets_name,$offsets_val in map-get($position, offsets) {
+        .#{$directions}-#{$offsets_name} {
+            #{$directions}:#{$offsets_val} !important;
+        }
+
+    }
+}

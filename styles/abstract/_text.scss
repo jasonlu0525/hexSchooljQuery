@@ -1,0 +1,18 @@
+@each $size,$value in $font-size {
+    .fs-#{$size} {
+       font-size:$value  !important;
+    }
+
+}
+
+@each $directiob_val in $text-direction {
+    .text-#{$directiob_val}{
+        text-align: $directiob_val !important;
+    }
+}
+
+@each $fw-name,$fw-val in $font-weight {
+    .fw-#{$fw-name}{
+        font-weight: $fw-val  !important;
+    }
+}

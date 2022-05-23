@@ -1,0 +1,14 @@
+.link {
+    position: relative;
+    padding: 16px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease .2s;
+
+    border-bottom: 4px solid transparent;
+
+    &--active,&:hover {
+        border-bottom-color: $secondary;
+    }
+
+}

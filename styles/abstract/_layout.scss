@@ -1,0 +1,55 @@
+
+
+@each $display_val in $display {
+    .d-#{$display_val} {
+        display: $display_val  !important;
+    }
+
+}
+
+@each $flex_justify_content_name,$flex_justify_content_val in $flex_justify_content {
+    .justify-content-#{$flex_justify_content_name} {
+       justify-content: $flex_justify_content_val !important;
+    }
+
+}
+
+@each $flex_direction_val in $flex_direction {
+    .flex-direction-#{$flex_direction_val} {
+        flex-direction: $flex_direction_val !important;
+    }
+}
+
+@each $flex_align_items_name,$flex_align_item_val in $flex_align_items {
+    .align-items-#{$flex_align_items_name}{
+        align-items:$flex_align_item_val !important;
+    }
+} 
+
+@each $scale_name,
+$scale_val in $scale {
+    .w-#{$scale_name} {
+        width: $scale_val;
+    }
+    .h-#{$scale_name} {
+        height: $scale_val;
+    }
+
+}
+@each $flex_space_val in $flex_space {
+    .flex-shrink-#{$flex_space_val} {
+        flex-shrink: $flex_space_val !important;
+    }
+
+    .flex-grow-#{$flex_space_val} {
+        flex-grow: $flex_space_val !important;
+    }
+}
+
+@each $flex-wrap_val in $flex-wrap {
+    .flex-#{$flex-wrap_val} {
+        flex-wrap: $flex-wrap_val !important;
+    }
+}
+
+

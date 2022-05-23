@@ -1,0 +1,10 @@
+.form-control{
+    padding: 7px 9px;
+    border-radius: 4px;
+    border-color: $gray-light-2;
+    outline: 0;
+    &:focus{
+        box-shadow: 0 0 1rem 0.125rem  darken($gray-light-2, 80%) ;
+    }
+
+}

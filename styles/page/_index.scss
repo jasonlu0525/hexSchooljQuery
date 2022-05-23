@@ -1,0 +1,49 @@
+.banner {
+    position: relative;
+    z-index: -2;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+
+    &-first {
+        background-image: url(../img/banner02.png);
+    }
+
+    &-middle {
+        background-image: url(../img/banner.png);
+    }
+
+    &-last {
+        background-image: url(../img/banner03.png);
+    }
+
+    &::after {
+        display: block;
+        content: " ";
+        background-color: $primary;
+        opacity: 0.5;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 156px;
+        transform: translateY(-50%);
+
+    }
+
+}
+
+.liner__gradient__secondary {
+    background-image: linear-gradient(to bottom, darken($secondary, 25%), darken($secondary, 10%));
+}
+
+.backToTopBtn {
+    top: 85%;
+    left: 85%;
+    background-color: $gray-dark-1;
+    border-radius: 50%;
+}
+

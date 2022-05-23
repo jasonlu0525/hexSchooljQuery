@@ -1,0 +1,16 @@
+@each $space,$value in $spacing {
+    @each $box,$box_val in $box-model {
+        @each $dir,$dir_val in $direction {
+            .#{$box}#{$dir}-#{$space} {
+                #{$box_val}-#{$dir_val}: $value !important;
+            }
+        }
+    }
+}
+
+        @each $dir,$dir_val in $direction {
+                .m#{$dir}-auto {
+                    margin-#{$dir_val}:auto;
+                
+        }
+    }

@@ -1,0 +1,19 @@
+@each $color_name,
+$color_val in $colors {
+
+    @each $shortand,
+    $colors_prefix_val in $colors_prefix {
+        .#{$shortand}-#{$color_name} {
+
+            #{$colors_prefix_val}: $color_val !important;
+
+            @if $shortand=="link" {
+                &:hover{
+                    color: darken($color_val, 20%) !important;
+                }
+            }
+
+
+        }
+    }
+}

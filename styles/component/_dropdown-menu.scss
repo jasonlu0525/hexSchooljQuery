@@ -1,0 +1,29 @@
+.dropdown-menu {
+    position: relative;
+    white-space: nowrap;
+
+    &-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+
+    }
+
+    &-items {
+
+        background: $white;
+        color: $secondary;
+    }
+
+    &-link {
+        display: block;
+        padding: 0.5rem;
+        border-bottom: 4px solid transparent;
+
+        &.active,
+        &:hover {
+            border-bottom-color: $secondary;
+        }
+    }
+
+}
